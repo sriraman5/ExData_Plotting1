@@ -1,8 +1,11 @@
 plot1 <- function(datevec) {
     
+    ## freq. histogram of Global Active Power for designated dates
+    ## uses data from the UC Irvine Machine Learning Repository
+    
     ## datevec <- vector of dates (character OK)
     ## dislike having same function below in multiple files :(
-    
+      
     getDATA(datevec)
     
     with(HPC,hist(Global_active_power,col="red",

@@ -1,5 +1,11 @@
 plot2 <- function(datevec) {
     
+    ## Global Active Power by minute for designated dates
+    ## uses data from the UC Irvine Machine Learning Repository
+    
+    ## datevec <- vector of dates (character OK)
+    ## dislike having same function below in multiple files :(
+    
     getDATA(datevec)    
     
     with(HPC,plot(datetime,Global_active_power,type="l",         

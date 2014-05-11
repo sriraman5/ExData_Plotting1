@@ -1,6 +1,18 @@
 plot4 <- function(datevec) {
     
-    getDATA(datevec)
+    ## Household Power Consumption for designated dates (four graphs):
+    
+    ## - Global Active Power
+    ## - Voltage
+    ## - Sub-metering
+    ## - Global Reactive Power
+    
+    ## uses data from the UC Irvine Machine Learning Repository
+    
+    ## datevec <- vector of dates (character OK)
+    ## dislike having same function below in multiple files :(
+    
+    getDATA(datevec)  
     
     par(mfrow=c(2,2),mar=c(4,4,2,1))
     
